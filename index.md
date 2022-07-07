@@ -1,4 +1,4 @@
 ## 欢迎来到我的GitHub
 这是我的第一个博客，这是一个尝试页面
 ## 我现在就来试试看看
-## 下一个是日期博客[GitHub Pages](https://pages.github.com/)
+## 下一个是日期博客[Date Pages](./20220717A.md)
