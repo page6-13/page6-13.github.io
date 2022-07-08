@@ -1,5 +1,161 @@
-## 欢迎来到我的GitHub
-这是我的第一个博客，这是一个尝试页面
-## 我现在就来试试看看
-[Date](./20220707A.md)
-## 下一个是日期博客![Alt 太空人](./wallhaven-6o7z77.jpg)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   body{
+		        background: url("mypicture/背景图片/英雄联盟.jpg") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -o-background-size: cover;                
+                background-size: cover;
+	}
+    .myLeftTitle {
+        display: block;
+        /*background-color: rgba(226, 233, 239, 0.389);*/
+        padding: 50px;
+        font-size: 40px;
+        background-color: rgba(82, 77, 77, 0.652);
+    }
+    
+    myLitleTitle{
+        margin-left: 50px;
+        font-size: 30px;
+    }
+
+    myfontColor{
+        color: aliceblue;
+    }
+    S8fontColor{
+        color: rgb(255, 255, 255);
+    }
+    
+    S9fontColor{
+        color: red;
+    }
+
+    S11fontColor{
+        color:rgb(102, 99, 99)
+    }
+    a{ 
+        text-decoration:none
+    } 
+
+
+    .flex-container {
+        display: -webkit-flex;
+        display: flex;
+        width:100%;
+        height:100%;
+        
+    }
+    
+    
+
+    .flex-item1 {
+        width: 100%;
+        height: 750px;
+        margin: 10px;
+        opacity:0.8;
+        filter:alpha(opacity=80);
+        border-radius: 10px;
+}
+
+.flex-item2 {
+        width: 500px;
+        height: 400px;
+        margin: 10px;
+        opacity:0.8;
+        filter:alpha(opacity=80);
+        border-radius: 10px;
+}
+
+.flex-item3 {
+        width: 100%;
+        opacity:0.8;
+        filter:alpha(opacity=80);
+}
+
+.flex-item1:hover{
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+
+.flex-item2:hover{
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+    </style> 
+
+
+
+<body>
+    <div class="myLeftTitle">
+                                                         <myfontColor>英雄联盟LPL夺冠时刻</myfontColor>
+    <myLitleTitle><a href="page1.html"><myfontColor><span class="toptext">首页</span></myfontColor></a></myLitleTitle>
+    <myLitleTitle><a href="page2.html" target="_blank"><S8fontColor><span class="toptext">S8IG</span></myfontColor></a></myLitleTitle>
+    <myLitleTitle><a href="page3.html" target="_blank"><S9fontColor><span class="toptext">S9FPX</span></myfontColor></a></myLitleTitle>
+    <myLitleTitle><a href="page4.html" target="_blank"><S11fontColor><span class="toptext">S11EDG</span></myfontColor></a></myLitleTitle>
+    <myLitleTitle><a href="page5.html" target="_blank"><myfontColor><span class="toptext">精彩瞬间</span></myfontColor></a></myLitleTitle>
+    </div class="myLeftTitle">
+
+    <!-- 首页第一张图片 -->
+    <div class="flex-container">
+    <ul>
+       <li><img class="flex-item3" src="mypicture/背景图片/首页图片2.jpg" alt="" height="800"></li>
+       <li><img class="flex-item3" src="mypicture/ig冠军时刻/ig.png" alt="" height="500"></li>
+       <li><img class="flex-item3" src="mypicture/fpx冠军时刻/fpx.png" alt="" height="500"></li>
+       <li><img class="flex-item3" src="mypicture/edg冠军时刻/edg.png" alt="" height="500"></li>
+    </ul>
+    </div>
+
+    
+
+    <div class="flex-container">
+        <img class="flex-item2" src="mypicture/ig冠军时刻/s8ig.jpeg" alt="">
+        <img class="flex-item2" src="mypicture/ig冠军时刻/ig奖杯.jpeg" alt="">
+        <img class="flex-item2" src="mypicture/ig冠军时刻/ig夺冠.jpg" alt="">
+    </div>
+
+    <div class="flex-container">
+        <img class="flex-item2" src="mypicture\fpx冠军时刻\fpx夺冠4.jpg" alt="">
+        <img class="flex-item2" src="mypicture\fpx冠军时刻\fpx夺冠5.jpg" alt="">
+        <img class="flex-item2" src="mypicture\fpx冠军时刻\fpx夺冠2.jpg" alt="">
+    </div>
+
+    <div class="flex-container">
+        <img class="flex-item2" src="mypicture\edg冠军时刻\edg夺冠3.jpg" alt="">
+        <img class="flex-item2" src="mypicture\edg冠军时刻\edg夺冠4.jpg" alt="">
+        <img class="flex-item2" src="mypicture\edg冠军时刻\edg夺冠6.jpg" alt="">
+    </div>
+
+    <div class="flex-container">
+        <img class="flex-item1"  src="mypicture\背景图片\首页图片.jpg">
+    </div>
+    <script>
+        let toptextobj=document.getElementsByClassName("toptext");
+        for(let i=0;i<toptextobj.length;i++)
+        {
+            toptextobj[i].onmouseover=function(){
+            for(let j=0;j<toptextobj.length;j++)
+            {               
+                toptextobj[j].style.opacity="50%";
+            }
+            toptextobj[i].style.opacity="100%";
+           }
+        } 
+        for(let i=0;i<toptextobj.length;i++)
+        {
+             toptextobj[i].onmouseout=function(){
+            for(let j=0;j<toptextobj.length;j++)
+            {
+                toptextobj[j].style.opacity="";
+            }
+           }
+        }  
+    </script>
+</body>
+</html>
