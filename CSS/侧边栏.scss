@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
+
+:root {
+  --highlight: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+//   display: flex;
+//   height: 100vh;
+//   background-color: #a4b1e6;
+//   justify-content: center;
+//   align-items: center;
+}
+
+.navbar {
+  
+  // background-color: rgb(255, 6, 6);
+  display: flex;
+  width: 400px;
+  max-width: 400px;
+  flex-direction: column;
+  background-image: url("../Picture/wallhaven-6o8ekw.jpg");
+  background-size: cover;
+ //   justify-content: space-between;
+//   box-shadow: 0 14px 28px #8f9cd4, 0 10px 10px #8f9cd4;
+}
+
+.list-item {
+  list-style-type: none;
+  flex-basis: 100%;
+  min-height: 90px;
+  display: flex;
+  position: relative;
+  // color: #555;
+  transform: translateY(0);
+  transition: transform 0.5s ease, opacity 0.2s ease;
+  cursor: pointer;
+  justify-content: center;
+  padding-right: 100px;
+  // align-items: center;
+   
+}
+
+.list-item-name {
+  font-size: 60px;
+  font-weight: 500px;
+  position: absolute;
+  transform: translate(0,20px);
+  transition: transform 0.5s ease, opacity 0.2s ease;
+  opacity: 0;
+  line-height: 130px;
+}
+
+.list-item:hover {
+  color: var(--highlight);
+  transform: translateY(0);
+  background-color: rgba(0, 0, 0, 0.403);
+  .list-item-name {
+    transform: translate(48px,20px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 350px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    max-width: 120px;
+    padding-bottom: 20px;
+  }
+
+  .list-item {
+    flex-basis: auto;
+  }
+}

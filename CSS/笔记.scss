@@ -1,0 +1,135 @@
+$baseColor: #5B6281;
+$contrastColor: #ffffff;
+$accentColor: #EEEEEE;
+$secondaryAccentColor: #F4F4F4;
+
+$ease: cubic-bezier(0.33, 1, 0.68, 1);
+$duration: 1.25s;
+$stagger: $duration * .25;
+
+
+body {
+	background: $baseColor;
+	color: $contrastColor;
+	font: 400 100%/1.6 "Noto Sans", sans-serif;
+
+}
+
+.hero {
+	box-sizing: border-box;
+	display: flex;
+	min-height: 100vh;
+	padding: 2rem;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	font-size: 1.15rem;
+
+	&::before {
+		transform: rotate(-5deg) scaleY(0);
+		transform-origin: 100% 100%;
+		content: "";
+		display: block;
+		position: absolute;
+		right: -0.5%;
+		top: 0;
+		width: 35%;
+		height: 100%;
+		// background: $secondaryAccentColor;
+		animation: untransform normal 1 $duration $duration - $stagger $ease forwards;
+		background-image: url("../Picture/苏联.png");
+		background-position: center;
+		
+	}
+
+	&::after {
+		transform: scaleY(0);
+		transform-origin: 50% 100%;
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 68%;
+		height: 100%;
+		// background: $accentColor;
+		animation: untransform normal 1 $duration+$stagger $stagger $ease forwards;
+		background-image: url("../Picture/社会主义领导人.jpg");
+		background-size: contain;
+		background-repeat:repeat-y;
+		z-index: -1;
+	}
+
+
+
+	&__title {
+		margin-bottom: 15px;
+		font-size: 3.75rem;
+		overflow: hidden;
+		font-weight: 700;
+		line-height: 1.4;
+
+		span {
+			display: inline-block;
+			transform: rotate(30deg) translateY(2em);
+			transform-origin: 0 100%;
+			animation: untransform normal 1 $duration $stagger $ease forwards;
+			color: red;
+		}
+	}
+
+	&__copy {
+		margin-bottom: 20px;
+		max-width: 50ch;
+		transform: translatey(2em);
+		opacity:0;
+		animation: untransform normal 1 $duration 3*$stagger $ease forwards;
+	}
+
+	&__link {
+		color: inherit;
+		transform: translatey(2em);
+		opacity:0;
+		animation: untransform normal 1 $duration 4*$stagger $ease forwards;
+	}
+
+	&__link:hover{
+		display: flex;
+		transform: scale(120%);
+        transition: transform .5s;
+		background-color: #F4F4F4;
+		justify-content: center;
+		color: red;
+	}
+
+}
+a{
+	text-decoration: none;
+	width: 120px;
+	text-align: center;
+	
+}
+
+a.back {
+		display: flex;
+		border: solid white;
+		justify-content: center;
+		color: red;
+		font-size: 30px;
+		margin-top: 20px;
+		border-radius: 8%;
+}
+
+a.back:hover{
+	transform: scale(120%);
+	transition: transform .5s;
+}
+
+
+
+@keyframes untransform {
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}

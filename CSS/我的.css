@@ -1,0 +1,117 @@
+body{
+    background-image: url("../Picture/悠哉.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover{
+    color: aliceblue;
+}
+
+.outest{
+    width: 1200px;
+    height:1000px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3%;
+    margin-top: 2%;
+    display: flex;
+}
+
+h1.outest{
+    width: 400px;
+    height:1000px;
+    border-radius: 3%;
+    background-image: linear-gradient(to top,rgb(0, 0, 0,0),rgba(0, 0, 0, 1));
+    background-size: cover;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+p.outest{
+    height: 1000px;
+	width: 750px;
+	border-radius: 3%; 
+    background-image: linear-gradient(to top,rgb(0, 0, 0,0),rgba(0, 0, 0, 1));
+    margin-left: 50px;
+    margin-top: 0;
+    position: relative;
+}
+
+
+#leftup{
+    position: absolute;
+    width: 120px;
+    height:120px;
+    border-radius: 50%;
+    background-image: url("../Picture/力.jpg");
+    background-size: cover;
+    border: solid 2px whitesmoke;
+    margin-top: 3%;
+}
+
+.par {
+	position: absolute;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 230px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    overflow: hidden;
+    
+}
+
+.par .show:hover {
+	padding-top: 58px;
+}
+
+.par .hover-show {
+    margin-top: -120px;
+    color: rgb(255, 221, 0);
+    }
+
+#leftup:hover{
+        transform: scale(120%);
+        transition: transform .3s;
+      /* down here you can change the color of the pfp shade */
+        box-shadow: 0px 0px 60px green;
+        height: 130px;
+        width: 130px;
+        filter: saturate(150%);
+ }
+
+#leftdown{
+    background-color: rgba(255, 255, 255, 0.558);
+    border-bottom-right-radius:3% ;
+    border-bottom-left-radius:3% ;
+    width:500px;
+    height: 680px;
+    margin-top: 80%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#rightup{
+    width: 100%;
+    height: 100px;
+    color: aliceblue;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    /* background-image: url("../Picture/皮卡丘.png"); */
+    background-size: cover;
+    font-family:'Courier New', Courier, monospace; 
+}
+
+
+

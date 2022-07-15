@@ -1,0 +1,16 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #ffffff00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(255, 1, 1, 0); 
+    text-decoration:none; 
+    cursor:pointer;  
+}

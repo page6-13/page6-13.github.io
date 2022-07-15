@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资料</title>
+    <link href="../CSS/资料.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/资料.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1 class="title">个人学习资料
+        <span><a href="../HTML/首页.html">首页</a></span>
+        <span><a href="../HTML/学习路线.html">学习路线</a></span>
+        <span><a href="../HTML/笔记.html">笔记</a></span>
+        <span><a href="../HTML/我的.html">我的</a></span>
+    </h1>
+   
+<div class="slider" x-data="{start: true, end: false}">
+  <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+    <div class="slider__item">
+      <img class="slider__image" src="../Picture/卡通海洋.jpg" alt="Image">
+      <div class="slider__info">
+        <h2><a href="#">计算机图形学</a></h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="../Picture/流星雨.png" alt="Image">
+      <div class="slider__info">
+        <h2><a href="#">C++</a></h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="../Picture/夜景.png" alt="Image">
+      <div class="slider__info">
+        <h2><a href="#">C#</a></h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="../Picture/天空火车.png" alt="Image">
+      <div class="slider__info">
+        <h2><a href="#">Unity</a></h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="../Picture/太空人.jpg" alt="Image">
+      <div class="slider__info">
+        <h2><a href="#">计算机网络</a></h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="../Picture/太空小姐姐.jpg" alt="Image">
+      <div class="slider__info">
+        <h2><a href="#">操作系统</a></h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="../Picture/炫酷城市.jpg" alt="Image">
+      <div class="slider__info">
+        <h2><a href="#">数据结构</a></h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="../Picture/鬼灭之刃.jpg" alt="Image">
+      <div class="slider__info">
+        <h2></h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="../Picture/远离地球.jpg" alt="Image">
+      <div class="slider__info">
+        <h2></h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="../Picture/背影.png" alt="Image">
+      <div class="slider__info">
+        <h2></h2>
+      </div>
+    </div>
+    <div class="slider__item">
+      <img class="slider__image" src="../Picture/社会主义领导人.jpg" alt="Image">
+      <div class="slider__info">
+        <h2></h2>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+</body>
+</html>
